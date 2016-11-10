@@ -7,39 +7,67 @@ class ScrapeAdvisor
   def initialize(page)
     @mechanize = Mechanize.new
     @base_url  = 'https://www.tripadvisor.com'
-    @listings  = []
-    @page      = page
+    @city_page = page
 
     CSV.open("tripadvisor_data.csv", "w") do |csv|
       # Puts some headers on top of the columns
-      csv << ['name', 'address']
+      csv << ['name', 'city', 'address', 'postcode']
     end
+
+    puts '[SCRAPER] start'.green
   end
 
   def run(url=nil)
-    puts '[SCRAPE] start'.green
-
     # Use mechanize to get and parse the URL
     if url
       puts "[SCRAPE] #{@base_url}#{url}".green
       rawpage = @mechanize.get("#{@base_url}#{url}")
     else
-      puts "[SCRAPE] #{@base_url}/Hotels-g187144-Ile_de_France-Hotels.html".green
-      rawpage = @mechanize.get("#{@base_url}/Hotels-g187144-Ile_de_France-Hotels.html")
+      puts "[SCRAPE] #{@base_url}/Hotels-g187070-oa20-France-Hotels.html#LEAF_GEO_LIST".green
+      rawpage = @mechanize.get("#{@base_url}/Hotels-g187070-oa20-France-Hotels.html#LEAF_GEO_LIST")
     end
 
-    # Search for the items with a class of listing and loop over them
-    rawpage.search('div.listing').each do |listing|
-      puts "[DETAIL] #{@base_url}#{listing.at('.property_title').attr('href')}".green
+    get_city_listings(rawpage)
 
-      details = @mechanize.get("#{@base_url}#{listing.at('.property_title').attr('href')}")
-      name    = listing.at('a').text.strip
-      address = details.at('span.street-address').text.strip.gsub('"', '')
+    @city_page += 1
+
+    rawpage.search('a.pageNum').each do |paginate|
+      if paginate.text.strip.to_i == @city_page
+        puts "[CITY PAGE] #{@city_page}".green
+        # Just call yourself again, but move to next page
+        run(paginate.attr('href'))
+      end
+    end
+  end
+
+  def get_city_listings(rawpage)
+    rawpage.search('div.geo_name').each do |city|
+      pages = 0
+
+      puts "[CITY] #{city.at('a').text.strip}"
+      get_hotels_per_city(city.at('a').attr('href'), pages)
+    end
+  end
+
+  def get_hotels_per_city(url, pages)
+    @listings = []
+    citylist  = @mechanize.get("#{@base_url}#{url}")
+
+    citylist.search('div.listing').each do |hotel|
+      details  = @mechanize.get("#{@base_url}#{hotel.at('.property_title').attr('href')}")
+      name     = hotel.at('a').text.strip
+      address  = details.at('span.street-address').text.strip.gsub('"', '')
+      city     = details.at('span.addressLocality').text.strip.gsub('"', '')
+      postcode = details.at('span.postalCode').text.strip.gsub('"', '')
+
+      puts "[HOTEL] #{name}"
 
       # Add the data we can find to the listings array
       @listings << {
-        name: name,
-        address: address
+        name:     name,
+        city:     city,
+        address:  address,
+        postcode: postcode
       }
     end
 
@@ -49,23 +77,25 @@ class ScrapeAdvisor
       @listings.each do |listing|
         csv << [
           listing[:name],
-          listing[:address]
+          listing[:city],
+          listing[:address],
+          listing[:postcode]
         ]
       end
     end
 
-    @page += 1
+    pages += 1
 
-    rawpage.search('a.pageNum').each do |paginate|
+    citylist.search('a.pageNum').each do |paginate|
       if paginate.text.strip.to_i == @page
         puts "[PAGE] #{@page}".green
         # Just call yourself again, but move to next page
-        run(paginate.attr('href'))
+        get_hotels_per_city(paginate.attr('href'), pages)
       end
     end
   end
 
 end
 
-scrape_advisor = ScrapeAdvisor.new(1)
+scrape_advisor = ScrapeAdvisor.new(2)
 scrape_advisor.run
