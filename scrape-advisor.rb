@@ -8,10 +8,11 @@ class ScrapeAdvisor
     @mechanize = Mechanize.new
     @base_url  = 'https://www.tripadvisor.com'
     @city_page = page
+    @services  = []
 
     CSV.open("tripadvisor_data.csv", "w") do |csv|
       # Puts some headers on top of the columns
-      csv << ['name', 'city', 'address', 'extended_address', 'postcode', 'country', 'lat', 'lng', 'bubble_rating', 'star_rating', 'review_count']
+      csv << ['id', 'name', 'city', 'address', 'extended_address', 'postcode', 'country', 'lat', 'lng', 'bubble_rating', 'star_rating', 'review_count']
     end
 
     puts '[SCRAPER] start'.green
@@ -38,6 +39,8 @@ class ScrapeAdvisor
         run(paginate.attr('href'))
       end
     end
+
+    add_services
   end
 
   def get_city_listings(rawpage)
@@ -54,6 +57,7 @@ class ScrapeAdvisor
     citylist  = @mechanize.get("#{@base_url}#{url}")
 
     citylist.search('div.listing').each do |hotel|
+      id        = SecureRandom.hex
       details   = (@mechanize.get("#{@base_url}#{hotel.at('.property_title').attr('href')}") rescue '')
       name      = (hotel.at('a').text.strip rescue '')
       address   = (details.at('span.street-address').text.strip.gsub('"', '') rescue '')
@@ -69,8 +73,28 @@ class ScrapeAdvisor
 
       puts "[HOTEL] #{name}".green
 
+      hotelservices = []
+
+      # Find all the services this hotel has to offer
+      details.search('//div[@class="amenity_row"]//div[@class="amenity_lst"]//li').children.each do |amenity|
+        symbol = amenity.text.strip.downcase.gsub(' ', '_')
+
+        if !symbol.empty?
+          hotelservices << {
+            symbol => true
+          }
+        end
+      end
+
+      # Store the services so we can add them to the hotel list later
+      @services << {
+        id:       id,
+        services: hotelservices
+      }
+
       # Add the data we can find to the listings array
       @listings << {
+        id:       id,
         name:     name,
         city:     city,
         address:  address,
@@ -90,6 +114,7 @@ class ScrapeAdvisor
       # Add all the listings we have collected to the CSV file
       @listings.each do |listing|
         csv << [
+          listing[:id],
           listing[:name],
           listing[:city],
           listing[:address],
@@ -105,6 +130,8 @@ class ScrapeAdvisor
       end
     end
 
+    add_services
+
     pages += 1
 
     citylist.search('a.pageNum').each do |paginate|
@@ -112,6 +139,55 @@ class ScrapeAdvisor
         puts "[PAGE] #{@page}".green
         # Just call yourself again, but move to next page
         get_hotels_per_city(paginate.attr('href'), pages)
+      end
+    end
+  end
+
+  def add_services
+    # Let's get all the unique service names
+    columns = @services.map{
+      |hotel| hotel[:services].map{
+        |service| service.map{
+          |key, value| key
+        }
+      }
+    }.flatten.uniq
+
+    # Add the columns to the CSV file
+    CSV.open("tripadvisor_data_with_services.csv", "w") do |csv|
+      csv << ['id', 'name', 'city', 'address', 'extended_address', 'postcode', 'country', 'lat', 'lng', 'bubble_rating', 'star_rating', 'review_count'] + columns
+
+      CSV.foreach('tripadvisor_data.csv', headers: true) do |row|
+        new_data = [
+          row['id'],
+          row['name'],
+          row['city'],
+          row['address'],
+          row['extended_address'],
+          row['postcode'],
+          row['country'],
+          row['lat'],
+          row['lng'],
+          row['bubble_rating'],
+          row['star_rating'],
+          row['review_count']
+        ]
+
+        add_data = []
+
+        columns.each do |column|
+          @services.select{|hotel| hotel[:id] == row['id']}.each do |service|
+            service[:services].each do |s|
+              if s[column]
+                add_data << 1
+              else
+                add_data << 0
+              end
+            end
+          end
+        end
+
+        csv << new_data + add_data
       end
     end
   end

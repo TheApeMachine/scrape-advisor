@@ -1,63 +1,32 @@
-name,city,address,extended_address,postcode,country,lat,lng,bubble_rating,star_rating,review_count
-Hotel de la Cite Carcassonne - MGallery Collection,Carcassonne,Place Auguste-Pierre Pont,"",11000,,,,4.5,,1355
-Chateau de Palaja,Palaja,7 Barri del Castel,"",11570,,,,4.5,,404
-Hotel La Bastide Saint Martin,Carcassonne,Avenue de Saint Martin,Hameau de Montredon,11000,,,,4.5,,268
-Hotel de la Cite Carcassonne - MGallery Collection,Carcassonne,Place Auguste-Pierre Pont,"",11000,,,,4.5,,1355
-Hotel du Pont Vieux,Carcassonne,32 rue Trivalle,"",11000,,,,4.5,,323
-Hotel du Chateau,Carcassonne,2 rue Camille Saint Saens,"",11000,,,,4.5,,696
-BEST WESTERN Hotel le Donjon,Carcassonne,2 rue du Comte Roger,Cite Medievale,11000,,,,4,,1261
-Campanile Carcassonne Est - La Cite,Carcassonne,Rue Camille Flammarion,"",11000,,,,4,,908
-Hotel Montmorency,Carcassonne,2 rue Camille Saint Saens,"",11000,,,,4,,713
-Le Domaine d'Auriac,Carcassonne,2535 route de Saint Hilaire,"",11009,,,,4.5,,284
-Pont Levis Hotel,Carcassonne,40 Chemin des Anglais,"",11000,,,,4.5,,135
-Mercure Carcassonne Porte de la Cite,Carcassonne,18 rue Camille Saint Saens,"",11000,,,,4,,1337
-Hotel Aragon,Carcassonne,15 Montee Gaston Combeleran,"",11000,,,,4,,308
-Hotel des Trois Couronnes,Carcassonne,2 rue des 3 Couronnes,"",11000,,,,4,,545
-Hotel Octroi,Carcassonne,143 rue Trivalle,"",11000,,,,4,,373
-Chateau de Cavanac,Cavanac,Rue Etienne Guizard,"",11570,,,,4,,337
-Brit Hotel Bosquet Carcassonne,Carcassonne,8 rue des Coteaux de Pech Mary,"",11000,,,,4,,156
-Ibis Budget Carcassonne Aeroport,Carcassonne,Zae la Ferraudiere,135 rue Alessandro Volta,11000,,,,4,,315
-Cerise Carcassonne Sud,Carcassonne,1 Rue Darius Milhaud,"",11890,,,,3.5,,618
-Audotel,Carcassonne,Saulsaie RN 113,Route de Narbonne,11000,,,,4,,91
-Hotel Espace Cite,Carcassonne,132 Rue Trivalle,"",11000,,,,3.5,,335
-Ibis Carcassonne Est la Cite,Carcassonne,11 rue Camille Flammarion,"",11000,,,,3.5,,403
-Inter-Hotel Carcassonne-Pont Rouge,Carcassonne,"110, Rue Yves de Kerguelen",ZI du Pont Rouge,11000,,,,4,,229
-Hotel Astoria,Carcassonne,"18, Rue Tourtel","","",,,,4,,301
-Hotel de la Bastide,Carcassonne,81 rue de la Liberte,"",11000,,,,3.5,,93
-Hotel Montsegur,Carcassonne,1 avenue Bunau Varilla,"",11000,,,,4,,72
-Hotel Soleil Terminus,Carcassonne,2 avenue du Marechal Joffre,"",11000,,,,3,,953
-L'Etoile Carcassonne,Carcassonne,3 allee Gilles de Roberval,ZI la Bourriette,11000,,,,4,,101
-Ibis Budget Carcassonne La Cite,Carcassonne,211 avenue du General Leclerc,"",11000,,,,3.5,,809
-Kyriad Carcassonne Ouest - La Cite,Carcassonne,Allee Gilles Personnier De Roberval,"",11000,,,,3.5,,259
-Hotel Central,Carcassonne,27 boulevard Jean Jaures,"",11000,,,,3.5,,120
-"Radisson Blu Hotel, Nantes",Nantes,6 Place Aristide Briand,"",44000,,,,4.5,,1484
-Oceania Hotel de France,Nantes,24 rue Crebillon,"",44000,,,,4.5,,488
-Okko Nantes Chateau,Nantes,15 B rue de Strasbourg,"",44000,,,,4.5,,487
-Hotel Sozo,Nantes,16 rue Frederic Cailliaud,"",44000,,,,4.5,,527
-"Radisson Blu Hotel, Nantes",Nantes,6 Place Aristide Briand,"",44000,,,,4.5,,1484
-Hotel Pommeraye,Nantes,2 rue Boileau,"",44000,,,,4.5,,526
-Hotel Voltaire Opera,Nantes,"10, rue Gresset",Quartier Graslin,44000,,,,4.5,,232
-Mercure Nantes Centre Grand Hotel,Nantes,4 rue du Couedic,"",44000,,,,4,,523
-L'HOTEL,Nantes,6 rue Henri IV,"",44000,,,,4,,347
-Campanile Nantes Centre - Saint Jacques,Nantes,16 boulevard Emile Gabory,"",44200,,,,4,,483
-Kyriad Nantes Ouest - Saint Herblain,Saint Herblain,Esplanade Ella Fitzgerald Zac Armor,"",44821,,,,4.5,,134
-BEST WESTERN PLUS Hotel De La Regate,Nantes,155 route de Gachet,"",44300,,,,4,,290
-Seven Urban Suites Nantes Centre,Nantes,10 rue Konrad Adenauer,"",44200,,,,4,,320
-Amiral Hotel,Nantes,26 B rue Scribe,"",44000,,,,4,,363
-Ibis Nantes Centre Tour Bretagne,Nantes,19 rue Jean Jaures,"",44000,,,,4,,576
-Ibis Styles Nantes Reze Aeroport,Reze,1 rue de l Ile Mace,"",44400,,,,4,,320
-Bho Hotel,Saint Herblain,3 rue Victor Schoelcher,"",44800,,,,4,,178
-Le Colisee Hotel & Spa,Saint Herblain,29 rue Bobby Sands,"",44800,,,,4.5,,129
-Ibis Nantes La Beaujoire Parc Expo,Nantes,5 rue du Moulin de la Halveque,"",44300,,,,4,,230
-Ibis Nantes Centre Gare Sud,Nantes,3 allee Baco,"",44000,,,,4,,441
-Adagio City Aparthotel Nantes Centre,Nantes,19 allee Commandant Charcot,"",44000,,,,4,,293
-Ibis Nantes Treillieres,Treillieres,1 rue Lavoisier,Parc d'Activités de Ragon,44119,,,,4,,201
-Mercure Nantes Centre Gare,Nantes,50-51 Quai de Malakoff,"",44000,,,,4,,343
-Adagio Access Nantes Viarme,Nantes,42 rue Russeil,"",44000,,,,4,,169
-Ibis Nantes Saint Herblain,Saint Herblain,345 Blvd Marcel Paul,ZAC Atlantis,44811,,,,4,,174
-Hotel Westotel Nantes Atlantique,La Chapelle-sur-Erdre,34 rue de la Vriere,"",44240,,,,4,,455
-Atlantys Hotel,Saint Herblain,8 rue des Cochardieres,"",44800,,,,4.5,,90
-Hotel La Perouse,Nantes,3 allee Duquesne,"",44000,,,,4,,243
-Hotel Le Cambronne,Nantes,11 rue de Fourcroy,"",44000,,,,4,,65
-Novotel Nantes Centre Bord de Loire,Nantes,1 boulevard des Martyrs Nantais,"",44200,,,,4,,488
-Novotel Nantes Carquefou,Carquefou,4 Allee des Sapins,ZI Belle Etoile/Antares,44470,,,,4,,307
+id,name,city,address,extended_address,postcode,country,lat,lng,bubble_rating,star_rating,review_count
+6e243194350e28784a13d08cfcf4cec9,Hotel de la Cite Carcassonne - MGallery Collection,Carcassonne,Place Auguste-Pierre Pont,"",11000,,,,4.5,,1355
+b5e75c147ac5df0e766d0489a6d4bdb8,Chateau de Palaja,Palaja,7 Barri del Castel,"",11570,,,,4.5,,404
+0679dd36b38d617358aefc092b14f214,Hotel La Bastide Saint Martin,Carcassonne,Avenue de Saint Martin,Hameau de Montredon,11000,,,,4.5,,268
+843b214869e353bc904632e6b0c06412,Hotel de la Cite Carcassonne - MGallery Collection,Carcassonne,Place Auguste-Pierre Pont,"",11000,,,,4.5,,1355
+515997fe392591908e4a59e21a198fe8,Hotel du Pont Vieux,Carcassonne,32 rue Trivalle,"",11000,,,,4.5,,323
+bc6c3808700b483fef326debfbfa8b37,Hotel du Chateau,Carcassonne,2 rue Camille Saint Saens,"",11000,,,,4.5,,696
+13e2092a2781d9683badd0a44c46ae17,BEST WESTERN Hotel le Donjon,Carcassonne,2 rue du Comte Roger,Cite Medievale,11000,,,,4,,1261
+2948f7543f2a0b2c62dae9396c514c45,Campanile Carcassonne Est - La Cite,Carcassonne,Rue Camille Flammarion,"",11000,,,,4,,908
+b9ed5304d61010d15e7610478ac9908c,Hotel Montmorency,Carcassonne,2 rue Camille Saint Saens,"",11000,,,,4,,713
+5bbe248d691bc88cba6ccf8acd035442,Le Domaine d'Auriac,Carcassonne,2535 route de Saint Hilaire,"",11009,,,,4.5,,284
+e205b81bd961dd91a4a71918dd7292d1,Pont Levis Hotel,Carcassonne,40 Chemin des Anglais,"",11000,,,,4.5,,135
+43fe67d82f84613e48b441c8c02cbe3c,Mercure Carcassonne Porte de la Cite,Carcassonne,18 rue Camille Saint Saens,"",11000,,,,4,,1337
+194ee1cb70542a8dce361122babe365e,Hotel Aragon,Carcassonne,15 Montee Gaston Combeleran,"",11000,,,,4,,308
+8f0696fed700bd9cfcf253ed7148f367,Hotel des Trois Couronnes,Carcassonne,2 rue des 3 Couronnes,"",11000,,,,4,,545
+d01f10240e53fa4b443f3b86282f7e97,Hotel Octroi,Carcassonne,143 rue Trivalle,"",11000,,,,4,,373
+4afbc601612311794259e5ac5ff8aeac,Chateau de Cavanac,Cavanac,Rue Etienne Guizard,"",11570,,,,4,,337
+ac2fda5ef85d6771b783f8497229023b,Brit Hotel Bosquet Carcassonne,Carcassonne,8 rue des Coteaux de Pech Mary,"",11000,,,,4,,156
+25b87472372938a33862817d1af501c0,Ibis Budget Carcassonne Aeroport,Carcassonne,Zae la Ferraudiere,135 rue Alessandro Volta,11000,,,,4,,315
+532ce242ae2bc0b253720f28b37c1f5b,Cerise Carcassonne Sud,Carcassonne,1 Rue Darius Milhaud,"",11890,,,,3.5,,618
+4adb2ee3e9bd50c64a55e03b9d8be853,Audotel,Carcassonne,Saulsaie RN 113,Route de Narbonne,11000,,,,4,,91
+9ddc460769da16994b0fbff3810ac9e3,Hotel Espace Cite,Carcassonne,132 Rue Trivalle,"",11000,,,,3.5,,335
+035c63ba780822422b64821f4192e99b,Ibis Carcassonne Est la Cite,Carcassonne,11 rue Camille Flammarion,"",11000,,,,3.5,,403
+d7968ac6174a6088c090e4b088d4cb0a,Inter-Hotel Carcassonne-Pont Rouge,Carcassonne,"110, Rue Yves de Kerguelen",ZI du Pont Rouge,11000,,,,4,,229
+bab6bfec348035f2949404359bd04ef4,Hotel Astoria,Carcassonne,"18, Rue Tourtel","","",,,,4,,301
+202f5387af75ac4bd33640b1b19b0192,Hotel de la Bastide,Carcassonne,81 rue de la Liberte,"",11000,,,,3.5,,93
+d45fc5f7d617f8cc7036eacb2cb5832c,Hotel Montsegur,Carcassonne,1 avenue Bunau Varilla,"",11000,,,,4,,72
+5cf96f1078708bcae7daf1fbe0f12503,Hotel Soleil Terminus,Carcassonne,2 avenue du Marechal Joffre,"",11000,,,,3,,953
+0eb3571dd4d1a8a9f8956589ad139414,L'Etoile Carcassonne,Carcassonne,3 allee Gilles de Roberval,ZI la Bourriette,11000,,,,4,,101
+58695c726f0e91637ba449dc62e12d0e,Ibis Budget Carcassonne La Cite,Carcassonne,211 avenue du General Leclerc,"",11000,,,,3.5,,809
+4c467be43bd94879514db2a28f10bfd4,Kyriad Carcassonne Ouest - La Cite,Carcassonne,Allee Gilles Personnier De Roberval,"",11000,,,,3.5,,259
+3185ad0c4d6f279d021a0cb3df274ae5,Hotel Central,Carcassonne,27 boulevard Jean Jaures,"",11000,,,,3.5,,120
