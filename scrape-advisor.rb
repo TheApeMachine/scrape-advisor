@@ -11,7 +11,7 @@ class ScrapeAdvisor
 
     CSV.open("tripadvisor_data.csv", "w") do |csv|
       # Puts some headers on top of the columns
-      csv << ['name', 'city', 'address', 'postcode']
+      csv << ['name', 'city', 'address', 'extended_address', 'postcode', 'country', 'lat', 'lng', 'bubble_rating', 'star_rating', 'review_count']
     end
 
     puts '[SCRAPER] start'.green
@@ -54,20 +54,34 @@ class ScrapeAdvisor
     citylist  = @mechanize.get("#{@base_url}#{url}")
 
     citylist.search('div.listing').each do |hotel|
-      details  = @mechanize.get("#{@base_url}#{hotel.at('.property_title').attr('href')}")
-      name     = hotel.at('a').text.strip
-      address  = details.at('span.street-address').text.strip.gsub('"', '')
-      city     = details.at('span.addressLocality').text.strip.gsub('"', '')
-      postcode = details.at('span.postalCode').text.strip.gsub('"', '')
+      details   = (@mechanize.get("#{@base_url}#{hotel.at('.property_title').attr('href')}") rescue '')
+      name      = (hotel.at('a').text.strip rescue '')
+      address   = (details.at('span.street-address').text.strip.gsub('"', '') rescue '')
+      city      = (details.at('//span[@property="addressLocality"]').text.strip.gsub('"', '') rescue '')
+      postcode  = (details.at('//span[@property="postalCode"]').text.strip.gsub('"', '') rescue '')
+      extended  = (details.at('span.extended-address').text.strip.gsub('"', '') rescue '')
+      country   = (details.at('span.country-name').text.strip.gsub('"', '') rescue '')
+      rating    = (details.at('span.ui_bubble_rating').attr('content') rescue '')
+      stars     = (details.at('div.ui_star_rating').attr('class') rescue '')
+      reviews   = (details.at('//a[@property="reviewCount"]').attr('content') rescue '')
+      latitude  = (details.at('div.mapContainer').attr('data-lat') rescue '')
+      longitude = (details.at('div.mapContainer').attr('data-lng') rescue '')
 
-      puts "[HOTEL] #{name}"
+      puts "[HOTEL] #{name}".green
 
       # Add the data we can find to the listings array
       @listings << {
         name:     name,
         city:     city,
         address:  address,
-        postcode: postcode
+        extended: extended,
+        postcode: postcode,
+        coutry:   country,
+        lat:      latitude,
+        lng:      longitude,
+        rating:   rating,
+        stars:    (stars.split(' ').last.split('_').last / 10 rescue nil),
+        reviews:  reviews
       }
     end
 
@@ -79,7 +93,14 @@ class ScrapeAdvisor
           listing[:name],
           listing[:city],
           listing[:address],
-          listing[:postcode]
+          listing[:extended],
+          listing[:postcode],
+          listing[:country],
+          listing[:latitude],
+          listing[:longitude],
+          listing[:rating],
+          listing[:stars],
+          listing[:reviews]
         ]
       end
     end
