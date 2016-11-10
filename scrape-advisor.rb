@@ -177,12 +177,10 @@ class ScrapeAdvisor
 
         columns.each do |column|
           @services.select{|hotel| hotel[:id] == row['id']}.each do |service|
-            service[:services].each do |s|
-              if s[column]
-                add_data << 1
-              else
-                add_data << 0
-              end
+            if !service[:services].select{|s| s[column]}.empty?
+              add_data << 1
+            else
+              add_data << 0
             end
           end
         end
