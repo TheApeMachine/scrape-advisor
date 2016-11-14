@@ -1,32 +1,32 @@
-id,name,city,address,extended_address,postcode,country,lat,lng,bubble_rating,star_rating,review_count,pets_allowed_(_dog_/_pet_friendly_),wheelchair_access,pool,bar/lounge,non-smoking_rooms,suites,air_conditioning,free_internet,free_high_speed_internet_(_wifi_),non-smoking_hotel,family_rooms,accessible_rooms,public_wifi,restaurant,spa,minibar,tennis_court,golf_course,fitness_center_with_gym_/_workout_room,kitchenette,microwave,refrigerator_in_room,smoking_rooms_available
-d984bdb6c55215574919b8d44abaecfa,Hotel Montmorency,Carcassonne,2 rue Camille Saint Saens,"",11000,,,,4,,713,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-61b55ae68e654b2a1fe3f569ba6b5c2a,Chateau de Palaja,Palaja,7 Barri del Castel,"",11570,,,,4.5,,404,0,0,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-7414764f36037c0741f3e8185cde6825,Hotel La Bastide Saint Martin,Carcassonne,Avenue de Saint Martin,Hameau de Montredon,11000,,,,4.5,,268,0,1,1,0,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0
-a3c6f134e6d5f034ed7542cece7e0ba3,Hotel de la Cite Carcassonne - MGallery Collection,Carcassonne,Place Auguste-Pierre Pont,"",11000,,,,4.5,,1355,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0
-c1ef683b52b817cd1757affc501d771b,Hotel du Pont Vieux,Carcassonne,32 rue Trivalle,"",11000,,,,4.5,,323,1,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-98419152447ba18d76912cc94dfb87eb,Hotel du Chateau,Carcassonne,2 rue Camille Saint Saens,"",11000,,,,4.5,,696,1,0,1,1,1,1,1,1,1,0,0,1,1,0,0,0,0,0,0,0,0,0,0
-831de54e7625fac8658cd2a77e42d3d6,BEST WESTERN Hotel le Donjon,Carcassonne,2 rue du Comte Roger,Cite Medievale,11000,,,,4,,1261,1,0,0,1,1,1,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0
-4c03b604f4d8a5af257bdb2e94864e62,Campanile Carcassonne Est - La Cite,Carcassonne,Rue Camille Flammarion,"",11000,,,,4,,908,1,1,0,1,1,0,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0
-048f4ed912a77a88c1753ad00fca2f78,Hotel Montmorency,Carcassonne,2 rue Camille Saint Saens,"",11000,,,,4,,713,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-ca32418cfaa36cba70f86d1b1c5fc9f1,Le Domaine d'Auriac,Carcassonne,2535 route de Saint Hilaire,"",11009,,,,4.5,,284,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,0,0,0,0
-e1f9f14978543aed3f9bf16f5de8cd2d,Pont Levis Hotel,Carcassonne,40 Chemin des Anglais,"",11000,,,,4.5,,135,0,1,1,1,1,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0
-33d661f42f1ce44294a34887c2068804,Mercure Carcassonne Porte de la Cite,Carcassonne,18 rue Camille Saint Saens,"",11000,,,,4,,1337,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0
-0e45a59a6d20e1ba6a95390562388b3e,Hotel Aragon,Carcassonne,15 Montee Gaston Combeleran,"",11000,,,,4,,308,0,1,1,0,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0
-f1c5627781b356e769dd86690a519624,Hotel des Trois Couronnes,Carcassonne,2 rue des 3 Couronnes,"",11000,,,,4,,545,1,1,1,0,1,1,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0
-124af9888ac3efcb935c590ae452923a,Hotel Octroi,Carcassonne,143 rue Trivalle,"",11000,,,,4,,373,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0
-35778f5aa91f254ecfe34ad956a34223,Chateau de Cavanac,Cavanac,Rue Etienne Guizard,"",11570,,,,4,,337,0,0,1,0,1,1,1,1,1,0,1,1,1,1,0,0,1,0,0,0,0,0,0
-0f280d5255ac800eebb1eb0d14a93260,Brit Hotel Bosquet Carcassonne,Carcassonne,8 rue des Coteaux de Pech Mary,"",11000,,,,4,,156,1,1,0,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-358eb3c7c88420ac7bf9bba7ea7b8240,Ibis Budget Carcassonne Aeroport,Carcassonne,Zae la Ferraudiere,135 rue Alessandro Volta,11000,,,,4,,315,1,1,0,0,1,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-08d6a1a88441e9f325a8074ddad71acd,Cerise Carcassonne Sud,Carcassonne,1 Rue Darius Milhaud,"",11890,,,,3.5,,618,1,1,1,0,1,0,1,1,1,1,0,1,1,0,0,0,0,0,1,1,1,1,0
-0d59def07b7bd891edf595b5885ae7b0,Audotel,Carcassonne,Saulsaie RN 113,Route de Narbonne,11000,,,,4,,91,1,1,0,1,1,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0
-be348ecc48c1a4d481e72b39f83118ed,Hotel Espace Cite,Carcassonne,132 Rue Trivalle,"",11000,,,,3.5,,335,1,1,0,0,1,0,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0
-f8951c48333d8573be64d9a8802ba5d2,Ibis Carcassonne Est la Cite,Carcassonne,11 rue Camille Flammarion,"",11000,,,,3.5,,403,1,1,0,1,1,0,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0
-77f69b866ec9ac26993cc76c1ee52d04,Inter-Hotel Carcassonne-Pont Rouge,Carcassonne,"110, Rue Yves de Kerguelen",ZI du Pont Rouge,11000,,,,4,,229,1,1,0,0,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0
-62f547a850cab72464a156334ebd16d5,Hotel Astoria,Carcassonne,"18, Rue Tourtel","","",,,,4,,301,0,0,0,0,1,0,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0
-373aa67eebef20eb552bf463368951a7,Hotel de la Bastide,Carcassonne,81 rue de la Liberte,"",11000,,,,3.5,,93,1,0,0,0,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-30683306c166404ea5cf9e32e1ad59c7,Hotel Montsegur,Carcassonne,1 avenue Bunau Varilla,"",11000,,,,4,,72,1,0,0,0,1,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,1
-9f0617e3d59b91b7830e3d626932b9f1,Hotel Soleil Terminus,Carcassonne,2 avenue du Marechal Joffre,"",11000,,,,3,,953,1,0,1,1,1,1,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0
-4106ec783343513ae75a311a06626e9e,L'Etoile Carcassonne,Carcassonne,3 allee Gilles de Roberval,ZI la Bourriette,11000,,,,4,,101,1,1,0,1,1,0,0,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0
-c455356ce207d5ceddccb1e17291756f,Ibis Budget Carcassonne La Cite,Carcassonne,211 avenue du General Leclerc,"",11000,,,,3.5,,809,1,1,0,0,1,0,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0
-b90aa6b3eff2697833ad0cffeef9f026,Kyriad Carcassonne Ouest - La Cite,Carcassonne,Allee Gilles Personnier De Roberval,"",11000,,,,3.5,,259,1,1,0,0,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0
-82ac75e971f579b93fa0dcd7c448fe3e,Hotel Central,Carcassonne,27 boulevard Jean Jaures,"",11000,,,,3.5,,120,0,0,0,0,1,0,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+id,name,city,address,extended_address,postcode,country,lat,lng,bubble_rating,star_rating,review_count,wheelchair_access,pets_allowed_(_dog_/_pet_friendly_),non-smoking_hotel,restaurant,bar/lounge,non-smoking_rooms,accessible_rooms,family_rooms,air_conditioning,free_internet,free_high_speed_internet_(_wifi_),public_wifi,fitness_center_with_gym_/_workout_room,spa,suites,minibar,paid_wifi,smoking_rooms_available,hot_tub,kitchenette,microwave,refrigerator_in_room,pool
+b30108668e0659ba4f1fd7425cd117a9,Campanile Nantes Centre - Saint Jacques,Nantes,16 boulevard Emile Gabory,"",44200,,,,4,,483,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+c0bb457e6f382a1993234c948993e722,Oceania Hotel de France,Nantes,24 rue Crebillon,"",44000,,,,4.5,,493,1,1,1,0,1,1,1,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+55fac78de4a74d31686aac3423cecbf6,Okko Nantes Chateau,Nantes,15 B rue de Strasbourg,"",44000,,,,4.5,,489,1,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+3c6c6fdacec33df55fd6aa490e50a265,Hotel Sozo,Nantes,16 rue Frederic Cailliaud,"",44000,,,,4.5,,528,1,1,1,0,1,1,1,0,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0
+06297ca8e14cb7de39cca97c941514f1,"Radisson Blu Hotel, Nantes",Nantes,6 Place Aristide Briand,"",44000,,,,4.5,,1490,1,0,1,1,1,1,0,1,1,1,1,0,1,0,1,1,1,0,0,0,0,0,0
+731c1cf3445ab1f0b242ecac258c809c,Hotel Pommeraye,Nantes,2 rue Boileau,"",44000,,,,4.5,,526,0,1,0,0,0,1,0,1,0,1,1,1,0,0,0,0,0,1,0,0,0,0,0
+e68bf412c349484f8551efa18aaf8f9d,Hotel Voltaire Opera,Nantes,"10, rue Gresset",Quartier Graslin,44000,,,,4.5,,233,0,1,1,0,1,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+80cfe4d98a7aea7e7304b5ecfac6c3c2,L'HOTEL,Nantes,6 rue Henri IV,"",44000,,,,4,,348,0,0,1,0,0,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+336627b2684d8deb63fad8fa73fc4ba2,Mercure Nantes Centre Grand Hotel,Nantes,4 rue du Couedic,"",44000,,,,4,,526,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,0,0,0,0,0
+eb726388b2e1a39532ff048339a904d2,Campanile Nantes Centre - Saint Jacques,Nantes,16 boulevard Emile Gabory,"",44200,,,,4,,483,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+c0a9251d64328dde1b3344b7be736f66,Kyriad Nantes Ouest - Saint Herblain,Saint Herblain,Esplanade Ella Fitzgerald Zac Armor,"",44821,,,,4.5,,136,1,0,1,0,1,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0
+f5dc30fa9595325310cfe6b0a6d9b4f9,Seven Urban Suites Nantes Centre,Nantes,10 rue Konrad Adenauer,"",44200,,,,4,,320,1,1,1,0,0,1,1,1,1,1,1,1,0,1,1,1,0,0,1,1,1,1,0
+a4419e1ac127af01f34f07045c8c16c5,Amiral Hotel,Nantes,26 B rue Scribe,"",44000,,,,4,,364,1,1,1,0,0,1,1,1,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0
+8f83b180830d4355f811bc93c340de9b,BEST WESTERN PLUS Hotel De La Regate,Nantes,155 route de Gachet,"",44300,,,,4,,290,1,1,1,1,1,1,0,1,1,1,1,1,0,0,0,1,0,0,1,0,0,0,0
+0294f08ede0e3e4d30460a84f8bacd66,Ibis Nantes Centre Tour Bretagne,Nantes,19 rue Jean Jaures,"",44000,,,,4,,578,1,1,1,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+9b0b27ad66ca320316b249d633ee2328,Ibis Styles Nantes Reze Aeroport,Reze,1 rue de l Ile Mace,"",44400,,,,4,,320,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+e6bf25667eccf08d8155383d114ebe7b,Bho Hotel,Saint Herblain,3 rue Victor Schoelcher,"",44800,,,,4,,179,1,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+e5451e3a0aaf1fccf299497a732a0ba1,Ibis Nantes La Beaujoire Parc Expo,Nantes,5 rue du Moulin de la Halveque,"",44300,,,,4,,232,1,1,0,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+dfe60a872209ff06a9fd856e8e7c002c,Ibis Nantes Centre Gare Sud,Nantes,3 allee Baco,"",44000,,,,4,,441,1,1,1,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+c2a4a751b45f0e5950f9cfa072118fd0,Le Colisee Hotel & Spa,Saint Herblain,29 rue Bobby Sands,"",44800,,,,4.5,,131,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0
+cc5bb42900c2972c536fb3fd859af650,Adagio City Aparthotel Nantes Centre,Nantes,19 allee Commandant Charcot,"",44000,,,,4,,294,1,1,1,0,0,1,1,0,1,1,1,1,1,0,0,0,0,0,0,1,0,1,0
+e3ca9b51788b1215c35b8cc085e980e4,Adagio Access Nantes Viarme,Nantes,42 rue Russeil,"",44000,,,,4,,169,1,1,1,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0,1,0,0,0
+cfe02046a1f2828f9f9890c251bc9a89,Ibis Nantes Saint Herblain,Saint Herblain,345 Blvd Marcel Paul,ZAC Atlantis,44811,,,,4,,181,1,1,1,1,1,1,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+8e5ac3401de7e8bcaa1cf8ed92dc5a8f,Ibis Nantes Treillieres,Treillieres,1 rue Lavoisier,Parc d'Activités de Ragon,44119,,,,4,,201,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,0,0,0,1
+380021713ece58cddd0f8941686998ea,Hotel Westotel Nantes Atlantique,La Chapelle-sur-Erdre,34 rue de la Vriere,"",44240,,,,4,,456,1,0,1,1,1,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,1
+eaff2f1673b5e75950e14b2016dd1fd6,Atlantys Hotel,Saint Herblain,8 rue des Cochardieres,"",44800,,,,4.5,,90,1,0,0,0,0,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+efa525487228eccb518051e2ed7d4d1a,Mercure Nantes Centre Gare,Nantes,50-51 Quai de Malakoff,"",44000,,,,4,,347,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+da6e07dd4bd78a90056888ff4975855d,Hotel La Perouse,Nantes,3 allee Duquesne,"",44000,,,,4,,244,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,1,0,0,0,0,0,0,0
+d3d261c7264872008679ba623ec4d97d,Novotel Nantes Centre Bord de Loire,Nantes,1 boulevard des Martyrs Nantais,"",44200,,,,4,,489,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0
+9cd7888c3584ed303641bc8fd38691d4,Hotel Le Cambronne,Nantes,11 rue de Fourcroy,"",44000,,,,4,,65,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+974e890ff268e8d6ed7dbd0950bbc406,Inter-Hotel Novella Nantes Centre Gare,Nantes,38 rue de Richebourg,"",44000,,,,4,,147,1,1,1,0,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0

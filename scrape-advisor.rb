@@ -64,12 +64,12 @@ class ScrapeAdvisor
       city      = (details.at('//span[@property="addressLocality"]').text.strip.gsub('"', '') rescue '')
       postcode  = (details.at('//span[@property="postalCode"]').text.strip.gsub('"', '') rescue '')
       extended  = (details.at('span.extended-address').text.strip.gsub('"', '') rescue '')
-      country   = (details.at('span.country-name').text.strip.gsub('"', '') rescue '')
+      country   = details.at('span.country-name').text.strip.gsub('"', '')
       rating    = (details.at('span.ui_bubble_rating').attr('content') rescue '')
-      stars     = (details.at('div.ui_star_rating').attr('class') rescue '')
+      stars     = details.at('div.ui_star_rating').attr('class')
       reviews   = (details.at('//a[@property="reviewCount"]').attr('content') rescue '')
-      latitude  = (details.at('div.mapContainer').attr('data-lat') rescue '')
-      longitude = (details.at('div.mapContainer').attr('data-lng') rescue '')
+      latitude  = details.at('div.mapContainer').attr('data-lat')
+      longitude = details.at('div.mapContainer').attr('data-lng')
 
       puts "[HOTEL] #{name}".green
 
@@ -100,11 +100,11 @@ class ScrapeAdvisor
         address:  address,
         extended: extended,
         postcode: postcode,
-        coutry:   country,
+        country:  country,
         lat:      latitude,
         lng:      longitude,
         rating:   rating,
-        stars:    (stars.split(' ').last.split('_').last / 10 rescue nil),
+        stars:    (stars.split(' ').last.split('_').last.to_i / 10 rescue nil),
         reviews:  reviews
       }
     end
@@ -121,16 +121,14 @@ class ScrapeAdvisor
           listing[:extended],
           listing[:postcode],
           listing[:country],
-          listing[:latitude],
-          listing[:longitude],
+          listing[:lat],
+          listing[:lng],
           listing[:rating],
           listing[:stars],
           listing[:reviews]
         ]
       end
     end
-
-    add_services
 
     pages += 1
 
