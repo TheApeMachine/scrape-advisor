@@ -34,7 +34,7 @@ class ScrapeAdvisor
 
     rawpage.search('a.pageNum').each do |paginate|
       if paginate.text.strip.to_i == @city_page
-        puts "[CITY PAGE] #{@city_page}".green
+        puts "[CITY PAGE] #{@city_page}".yellow
         # Just call yourself again, but move to next page
         run(paginate.attr('href'))
       end
@@ -45,7 +45,7 @@ class ScrapeAdvisor
 
   def get_city_listings(rawpage)
     rawpage.search('div.geo_name').each do |city|
-      pages = 0
+      pages = 1
 
       puts "[CITY] #{city.at('a').text.strip}"
       get_hotels_per_city(city.at('a').attr('href'), pages)
@@ -66,10 +66,10 @@ class ScrapeAdvisor
       extended  = (details.at('span.extended-address').text.strip.gsub('"', '') rescue '')
       country   = details.at('span.country-name').text.strip.gsub('"', '')
       rating    = (details.at('span.ui_bubble_rating').attr('content') rescue '')
-      stars     = details.at('div.ui_star_rating').attr('class')
+      stars     = (details.at('div.ui_star_rating').attr('class') rescue '')
       reviews   = (details.at('//a[@property="reviewCount"]').attr('content') rescue '')
-      latitude  = details.at('div.mapContainer').attr('data-lat')
-      longitude = details.at('div.mapContainer').attr('data-lng')
+      latitude  = (details.at('div.mapContainer').attr('data-lat') rescue '')
+      longitude = (details.at('div.mapContainer').attr('data-lng') rescue '')
 
       puts "[HOTEL] #{name}".green
 
@@ -133,8 +133,8 @@ class ScrapeAdvisor
     pages += 1
 
     citylist.search('a.pageNum').each do |paginate|
-      if paginate.text.strip.to_i == @page
-        puts "[PAGE] #{@page}".green
+      if paginate.text.strip.to_i == pages
+        puts "[HOTEL PAGE] #{pages}".yellow
         # Just call yourself again, but move to next page
         get_hotels_per_city(paginate.attr('href'), pages)
       end
