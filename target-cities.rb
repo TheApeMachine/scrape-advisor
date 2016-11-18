@@ -24,8 +24,8 @@ class ScrapeAdvisor
       puts "[SCRAPE] #{@base_url}#{url}".green
       rawpage = @mechanize.get("#{@base_url}#{url}")
     else
-      puts "[SCRAPE] #{@base_url}/Hotels-g187070-oa20-France-Hotels.html#LEAF_GEO_LIST".green
-      rawpage = @mechanize.get("#{@base_url}/Hotels-g187070-oa20-France-Hotels.html#LEAF_GEO_LIST")
+      puts "[SCRAPE] #{@base_url}/Hotels-g187070-France-Hotels.html".green
+      rawpage = @mechanize.get("#{@base_url}/Hotels-g187070-France-Hotels.html")
     end
 
     get_city_listings(rawpage)
@@ -201,5 +201,5 @@ class ScrapeAdvisor
 
 end
 
-scrape_advisor = ScrapeAdvisor.new(2)
+scrape_advisor = ScrapeAdvisor.new(1)
 scrape_advisor.run
